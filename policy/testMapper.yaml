@@ -197,3 +197,8 @@ datasets:
     template: deepDiff/v%(visit)d_kernelSrc_f%(filter)s.fits
   apPipe_metadata:
     template: apPipe_metadata/v%(visit)d_f%(filter)s.boost
+  test_plot:
+    template: test_plot/v%(visit)d_f%(filter)s.png
+    persistable: ignored
+    python: matplotlib.figure.Figure
+    storage: MatplotlibStorage
